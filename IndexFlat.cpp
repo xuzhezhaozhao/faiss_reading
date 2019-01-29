@@ -41,6 +41,7 @@ void IndexFlat::reset() {
 }
 
 
+// 用 openblas 或 sse 暴力计算
 void IndexFlat::search (idx_t n, const float *x, idx_t k,
                                float *distances, idx_t *labels) const
 {

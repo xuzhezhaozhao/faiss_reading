@@ -88,6 +88,7 @@ float fvec_L2sqr (
         const float * y,
         size_t d);
 
+// TODO SSE 乘法是什么原理？
 /* SSE-implementation of inner product and L2 distance */
 float  fvec_inner_product (
         const float * x,
@@ -184,6 +185,7 @@ void fvec_L2sqr_by_idx (
  * KNN functions
  ***************************************************************************/
 
+// 这个值设置为 20
 // threshold on nx above which we switch to BLAS to compute distances
 extern int distance_compute_blas_threshold;
 
